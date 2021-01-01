@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <title>Hello Django</title>
+</head>
+<body>
+    <h1>Welcome to Django!</h1>
+    <h2>{{ header }}</h2>
+    <img src="{% static 'images/telegram-minicon-min.png' %}" alt="Some"/>
+    <p>Name: {{ user.name }} Age: {{ user.age }}</p>
+    <p>Address: {{ address.0 }}, {{ address.1 }}, {{ address.2 }}</p>
+    <p>Langs: {{ langs.0 }}, {{ langs.1 }}</p>
+</body>
+</html>
